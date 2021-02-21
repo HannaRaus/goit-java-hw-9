@@ -10,7 +10,7 @@ public class ExTwo {
     private static String FILE_PATH =
             "C:\\Users\\Anna\\IT\\GOiT\\goit-java-hw-9\\src\\main\\resources\\ex2.txt";
     private static String TO_GSON_FILE =
-            "C:\\Users\\Anna\\IT\\GOiT\\goit-java-hw-9\\src\\main\\resources\\gson.txt";
+            "C:\\Users\\Anna\\IT\\GOiT\\goit-java-hw-9\\src\\main\\resources\\toGson.txt";
 
     public static void main(String[] args) {
         File file = new File(TO_GSON_FILE);
