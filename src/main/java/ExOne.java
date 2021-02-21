@@ -24,8 +24,8 @@ public class ExOne {
     }
 
     private static boolean checkIfNumberCorrect(String line) {
-        String varOne = "[0-9]{3}\\-[0-9]{3}\\-[0-9]{4}";
-        String varTwo = "\\([0-9]{3}\\)\\ [0-9]{3}\\-[0-9]{4}";
+        String varOne = "[0-9]{3}-[0-9]{3}-[0-9]{4}";
+        String varTwo = "\\([0-9]{3}\\) [0-9]{3}-[0-9]{4}";
 
         return line.matches(varOne) || line.matches(varTwo);
     }
