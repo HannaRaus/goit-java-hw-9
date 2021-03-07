@@ -1,14 +1,11 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-
+import java.util.*;
 
 public class ExTree {
     private static String PATH =
-            "C:\\Users\\Anna\\IT\\GOiT\\goit-java-hw-9\\src\\main\\resources\\ex3.txt";
+            "src/main/resources/ex3.txt";
 
     public static void main(String[] args) {
 
@@ -31,11 +28,9 @@ public class ExTree {
                 uniqueWords.put(word, counter + 1);
             }
 
-            Set<String> listOfUniqueWords = uniqueWords.keySet();
-            for (String key : listOfUniqueWords) {
-                System.out.println(key + " - " + uniqueWords.get(key));
-            }
-
+            uniqueWords.keySet().stream()
+                    .sorted(Comparator.comparing(uniqueWords::get, Comparator.reverseOrder()))
+                    .forEach(word -> System.out.println(word + " - " + uniqueWords.get(word)));
 
         } catch (IOException e) {
             System.err.println(e.getMessage());
