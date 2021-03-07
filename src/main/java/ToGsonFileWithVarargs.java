@@ -8,9 +8,9 @@ import java.util.List;
 
 public class ToGsonFileWithVarargs {
     private static String FILE_PATH =
-            "C:\\Users\\Anna\\IT\\GOiT\\goit-java-hw-9\\src\\main\\resources\\ex2.txt";
+            "src/main/resources/ex2.txt";
     private static String TO_GSON_FILE =
-            "C:\\Users\\Anna\\IT\\GOiT\\goit-java-hw-9\\src\\main\\resources\\toGsonWithVarargs.txt";
+            "src/main/resources/toGsonWithVarargs.txt";
 
     public static void main(String[] args) {
         File file = new File(TO_GSON_FILE);

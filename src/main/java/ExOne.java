@@ -2,7 +2,7 @@ import java.io.*;
 
 public class ExOne {
     private static String PATH =
-            "C:\\Users\\Anna\\IT\\GOiT\\goit-java-hw-9\\src\\main\\resources\\ex1.txt";
+            "src/main/resources/ex1.txt";
 
     public static void main(String[] args) {
 
